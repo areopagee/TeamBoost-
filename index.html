@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TeamBoost – Beverage manufacturing, advertising, media, photography and sponsorship in Sweden</title>
+<meta name="description" content="TeamBoost is a Swedish limited company (aktiebolag) active in food and beverage manufacturing, advertising, media production, photography and sponsorship.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2340'/%3E%3Cpath d='M15 45 L28 31 L36 39 L49 23' fill='none' stroke='%237FD1A8' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M39 20 H52 V33' fill='none' stroke='%237FD1A8' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B2340;--navy2:#12305A;--bg:#FFFFFF;--soft:#F2F5F8;--ink:#14243A;--mute:#52627A;--green:#3F8F6B;--line:#DCE3EB;color-scheme:light dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1A2F;--soft:#0F2440;--ink:#E8EEF5;--mute:#A3B3C8;--line:#1F3858;--green:#5DB690}}
+:root[data-theme="dark"]{--bg:#0A1A2F;--soft:#0F2440;--ink:#E8EEF5;--mute:#A3B3C8;--line:#1F3858;--green:#5DB690}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));height:100%}
+body{margin:0;font-family:Manrope,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:#fff}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:30}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-weight:800;font-size:20px;text-decoration:none;letter-spacing:-.01em}
+.logo span{color:#7FD1A8}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:15px;font-weight:500;opacity:.88}
+nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-color:#7FD1A8}
+.hero{background:var(--navy);color:#fff;padding:88px 0 96px}
+.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.08;letter-spacing:-.025em;font-weight:800;margin:0 0 22px;max-width:15em}
+.hero p{max-width:40em;font-size:19px;color:#C9D6E6;margin:0 0 34px}
+.btn{display:inline-block;background:#7FD1A8;color:#0B2340;font-weight:700;padding:14px 26px;border-radius:6px;text-decoration:none;border:0;font:inherit;font-weight:700;cursor:pointer}
+.btn:hover{background:#9BE0BD}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid #5E7899;margin-left:10px}
+.btn.ghost:hover{background:#12305A}
+.areas{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:64px;border-top:1px solid #2A4872}
+.areas div{padding:22px 20px 0 0;font-weight:700;font-size:17px}
+.areas small{display:block;font-weight:400;color:#9DB2CC;font-size:14px;margin-top:4px;line-height:1.5}
+section{padding:84px 0}
+section.alt{background:var(--soft)}
+h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.02em;line-height:1.15;margin:0 0 18px}
+h3{font-size:20px;margin:0 0 8px}
+.lead{color:var(--mute);max-width:42em;margin:0 0 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px}
+.item{border-top:3px solid var(--green);padding-top:18px}
+.item p,.item li{color:var(--mute);margin:0 0 10px}
+.item ul{padding-left:18px;margin:0}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
+.note{border-left:4px solid var(--green);background:var(--soft);padding:16px 20px;color:var(--mute);font-size:15px;margin-top:40px;max-width:50em}
+section.alt .note{background:var(--bg)}
+form{display:grid;gap:16px;max-width:560px}
+label{font-weight:700;font-size:15px;display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:12px 14px;border:1.5px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);width:100%}
+textarea{min-height:130px;resize:vertical}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+#msg{font-size:15px;margin:0;color:var(--green);min-height:1.4em}
+.facts p{margin:0 0 12px;color:var(--mute)}
+.facts b{color:var(--ink)}
+footer{background:var(--navy);color:#B7C6D9;padding:34px 0;font-size:14px}
+@media (max-width:820px){.areas{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr;gap:40px}nav{gap:14px}nav a{font-size:14px}.bar{height:auto;padding:12px 0;flex-wrap:wrap}section{padding:60px 0}.hero{padding:56px 0 64px}.btn.ghost{margin:10px 0 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">TeamBoost</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#industries">Industries</a><a href="#services">Services</a><a href="#partnerships">Partnerships</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <h1>Beverages and creative media, under one Swedish company.</h1>
+    <p>TeamBoost is a Swedish limited company (aktiebolag) combining food and beverage manufacturing with advertising, media production, photography and sponsorship.</p>
+    <a class="btn" href="#contact">Get in touch</a><a class="btn ghost" href="#services">View services</a>
+    <div class="areas">
+      <div>Beverages<small>Juices, drinks and spirits</small></div>
+      <div>Advertising &amp; Media<small>Campaigns and content</small></div>
+      <div>Photography<small>Sports, weddings, commercial</small></div>
+      <div>Sponsorship<small>Events and partnerships</small></div>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About TeamBoost</h2>
+    <p class="lead">TeamBoost is registered in Sweden as a limited liability company. Its primary industry is food and beverage manufacturing, supported by creative activities in advertising, media production, photography and sponsorship.</p>
+    <div class="three">
+      <div class="item"><h3>Mission</h3><p>To produce quality beverages and to support brands and people with creative media, photography and sponsorship services.</p></div>
+      <div class="item"><h3>Vision</h3><p>A diversified Swedish business where manufacturing and creative work strengthen one another.</p></div>
+      <div class="item"><h3>Values</h3><p>Quality, clarity, reliability and respect for customers and partners.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="industries" class="alt">
+  <div class="wrap">
+    <h2>Our industries</h2>
+    <p class="lead">Four areas of activity, each with its own focus.</p>
+    <div class="grid">
+      <div class="item"><h3>Beverage manufacturing</h3><p>Production and processing of fruit and vegetable juices, other beverages and blended spirits, with development and distribution of beverage products.</p></div>
+      <div class="item"><h3>Advertising</h3><p>Development and production of advertising campaigns and commercial advertising, plus brand promotion and marketing services.</p></div>
+      <div class="item"><h3>Media production</h3><p>Creation of media and promotional content for brands, products and events.</p></div>
+      <div class="item"><h3>Photography</h3><p>Sports, wedding, portrait, group, commercial and corporate photography.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Our services</h2>
+    <p class="lead">The business activities of TeamBoost AB, listed by area.</p>
+    <div class="grid">
+      <div class="item"><h3>Food &amp; beverage</h3><ul><li>Fruit and vegetable juice production</li><li>Beverage production and processing</li><li>Production and blending of alcoholic spirits</li><li>Development and distribution of beverage products</li></ul></div>
+      <div class="item"><h3>Advertising &amp; media</h3><ul><li>Advertising campaign development</li><li>Commercial advertising production</li><li>Media and promotional content creation</li><li>Marketing and brand promotion</li></ul></div>
+      <div class="item"><h3>Photography</h3><ul><li>Sports photography</li><li>Wedding photography</li><li>Portrait and group photography</li><li>Commercial and corporate photography</li></ul></div>
+      <div class="item"><h3>Sponsorship</h3><ul><li>Sponsorship opportunities and partnerships</li><li>Sports and event sponsorship</li><li>Brand visibility and promotional collaborations</li></ul></div>
+    </div>
+    <p class="note">The activities above describe the company’s registered business areas. Which services are currently available, and in what scope, is confirmed directly when you contact us. Alcohol production and sales are subject to Swedish licensing requirements.</p>
+  </div>
+</section>
+
+<section id="partnerships" class="alt">
+  <div class="wrap">
+    <h2>Partnerships and sponsorship</h2>
+    <p class="lead">TeamBoost is open to sponsorship and collaboration enquiries.</p>
+    <div class="three">
+      <div class="item"><h3>Sports and events</h3><p>Sponsorship of sports teams and events, with brand visibility for both sides.</p></div>
+      <div class="item"><h3>Brand collaborations</h3><p>Promotional collaborations that combine beverages, content and photography.</p></div>
+      <div class="item"><h3>Start a conversation</h3><p>Tell us about your event, team or brand, and we will reply with the options.</p><p><a href="#contact"><b>Contact us</b></a></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Contact us</h2>
+      <p class="lead">Send a message and we will get back to you.</p>
+      <form id="f" novalidate>
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Area of interest
+          <select name="area"><option>Beverages</option><option>Advertising &amp; media</option><option>Photography</option><option>Sponsorship &amp; partnerships</option><option>Other</option></select>
+        </label>
+        <label>Message<textarea name="message" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+        <p id="msg" role="status"></p>
+      </form>
+    </div>
+    <div class="facts">
+      <h3>Company information</h3>
+      <p><b>Company:</b> TeamBoost</p>
+      <p><b>Country:</b> Sweden</p>
+      <p><b>Form:</b> Aktiebolag</p>
+      <p><b>Address:</b> Sammels Väg 15, 311 54 Glommen, Sweden</p>
+      <p><b>Email:</b> <a href="mailto:contact@teamboost.live">contact@teamboost.live</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y">2026</span> TeamBoost AB, Sweden. All rights reserved.</div>
+</footer>
+
+<script>
+// Set the company email below; the form opens the visitor's email app addressed to it.
+var CONTACT_EMAIL = "contact@teamboost.live";
+document.getElementById("y").textContent = new Date().getFullYear();
+document.getElementById("f").addEventListener("submit", function(e){
+  e.preventDefault();
+  var f = e.target, m = document.getElementById("msg");
+  if(!f.name.value.trim() || !f.email.validity.valid || !f.message.value.trim()){
+    m.style.color = "#C0392B"; m.textContent = "Please enter your name, a valid email and a message."; return;
+  }
+  if(!CONTACT_EMAIL){
+    m.style.color = "#C0392B"; m.textContent = "The contact email has not been set up yet."; return;
+  }
+  var body = "Name: "+f.name.value+"\nEmail: "+f.email.value+"\nArea: "+f.area.value+"\n\n"+f.message.value;
+  window.location.href = "mailto:"+CONTACT_EMAIL+"?subject="+encodeURIComponent("Website enquiry: "+f.area.value)+"&body="+encodeURIComponent(body);
+  m.style.color = "var(--green)"; m.textContent = "Your email app should open with the message ready to send.";
+});
+</script>
+</body>
+</html>
